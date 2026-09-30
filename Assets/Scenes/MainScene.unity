@@ -551,20 +551,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1746810600543114187, guid: b6ae7b15576823647b26174520728c20, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b6ae7b15576823647b26174520728c20, type: 3}
       propertyPath: m_Name
       value: Cup_Blueberry
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b6ae7b15576823647b26174520728c20, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624882513362256961, guid: b6ae7b15576823647b26174520728c20, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b6ae7b15576823647b26174520728c20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 70166150}
   m_SourcePrefab: {fileID: 100100000, guid: b6ae7b15576823647b26174520728c20, type: 3}
 --- !u!4 &70166148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b6ae7b15576823647b26174520728c20, type: 3}
   m_PrefabInstance: {fileID: 70166147}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &70166149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b6ae7b15576823647b26174520728c20, type: 3}
+  m_PrefabInstance: {fileID: 70166147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &70166150
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70166149}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.529505, y: 0.7675904, z: 0.5986958}
+  m_Center: {x: 0.010104179, y: 0.39042652, z: 0.008990746}
 --- !u!1001 &78901777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -761,9 +802,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6654578380209163996, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4376820102463418379, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
       propertyPath: m_Name
       value: CupCake_Chocolate (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652747654649214147, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1070,6 +1127,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb835180aa9311343ab5f2fa34e02e59, type: 3}
       propertyPath: m_Name
       value: Donut_Vanilla (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb835180aa9311343ab5f2fa34e02e59, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442102377362857687, guid: bb835180aa9311343ab5f2fa34e02e59, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1713,6 +1778,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1838,6 +1904,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba164235f5d3c8344895878158be6e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleMovement
+  maxYaw: 25
+  sensitivity: 0.1
 --- !u!1001 &330630879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2025,6 +2105,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5a3e20078f37d9c46919ab83d5a2a83b, type: 3}
       propertyPath: m_Name
       value: Donut_Chocolate
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a3e20078f37d9c46919ab83d5a2a83b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885409645895471374, guid: 5a3e20078f37d9c46919ab83d5a2a83b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3805,6 +3893,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Donut_Matcha (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ff7b002c77eebb46b99a4babe5b4d35, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019389622004320609, guid: 7ff7b002c77eebb46b99a4babe5b4d35, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3824,7 +3920,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 665644807}
-  m_Layer: 0
+  - component: {fileID: 665644808}
+  m_Layer: 6
   m_Name: Lemon Cake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3848,6 +3945,21 @@ Transform:
   - {fileID: 1376395713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &665644808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665644806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b82019e805ec04f8e0cad4809e6655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Clickable
+  kind: 2
+  drinkMade: 0
+  foodItem: 5
 --- !u!1001 &669331513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4094,9 +4206,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6654578380209163996, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4376820102463418379, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
       propertyPath: m_Name
       value: CupCake_Chocolate
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652747654649214147, guid: 93adec3da93016d4fabc73a730857e51, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4894,7 +5022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 822187176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coffee Cups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5134,7 +5262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 897445020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cupcake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5214,6 +5342,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
       propertyPath: m_Name
       value: Prop_CakeStand_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395827364301121846, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5597,6 +5733,100 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 046bd1b0a4f8c234a88cc3575fe047a6, type: 3}
   m_PrefabInstance: {fileID: 978683896}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &985437799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 985437800}
+  - component: {fileID: 985437803}
+  - component: {fileID: 985437802}
+  - component: {fileID: 985437801}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &985437800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985437799}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &985437801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985437799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7f941a926c7b142abc7f55a905ffcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomerSpawner
+  allCustomers:
+  - {fileID: 11400000, guid: 592817cdabdafc848b5154f74f08b65d, type: 2}
+  - {fileID: 11400000, guid: 79ea013968fc0c94ba1b27220e96abf0, type: 2}
+  delayBetweenCustomers: 2
+  onPatienceTick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &985437802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985437799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a2a83bceb398c4493affab4797acad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrderManager
+  currentCustomer: {fileID: 0}
+  hasCup: 0
+  madeDrink: 0
+  madeFood: 0
+  onNewCustomer:
+    m_PersistentCalls:
+      m_Calls: []
+  onOrderCleared:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &985437803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985437799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabfac56bdcbaed469d76dd174fb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
+  score: 0
+  onScoreChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onFeedback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &992250668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5714,6 +5944,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
       propertyPath: m_Name
       value: Prop_CakeStand_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395827364301121846, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5975,6 +6213,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Donut_Chocolate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a3e20078f37d9c46919ab83d5a2a83b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885409645895471374, guid: 5a3e20078f37d9c46919ab83d5a2a83b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6036,6 +6282,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
       propertyPath: m_Name
       value: Prop_CakeStand_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395827364301121846, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7053,16 +7307,57 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cup_Coffee
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e286fefaa32a26c45b080691896707e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702706840989905817, guid: e286fefaa32a26c45b080691896707e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010234751100634094, guid: e286fefaa32a26c45b080691896707e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e286fefaa32a26c45b080691896707e2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1265329678}
   m_SourcePrefab: {fileID: 100100000, guid: e286fefaa32a26c45b080691896707e2, type: 3}
 --- !u!4 &1265329676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e286fefaa32a26c45b080691896707e2, type: 3}
   m_PrefabInstance: {fileID: 1265329675}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1265329677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e286fefaa32a26c45b080691896707e2, type: 3}
+  m_PrefabInstance: {fileID: 1265329675}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1265329678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265329677}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5687081, y: 0.7666981, z: 0.5887109}
+  m_Center: {x: 0.027910452, y: 0.39087325, z: 0.01398176}
 --- !u!1001 &1267070345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7382,7 +7677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291865213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chocolate Donut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7777,19 +8072,94 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3465085990824013854, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -2577043085917261900, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2432121784149454274, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1810218744204919764, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1153445153102365430, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
       propertyPath: m_Name
       value: Machine_Espresso_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970369035001557449, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275329786057939193, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1366665262}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1366665261}
   m_SourcePrefab: {fileID: 100100000, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+--- !u!1 &1366665260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cbf4c09f70ddb26458d4ddbad8a4c058, type: 3}
+  m_PrefabInstance: {fileID: 1366665259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1366665261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366665260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b82019e805ec04f8e0cad4809e6655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Clickable
+  kind: 1
+  drinkMade: 1
+  foodItem: 0
+--- !u!65 &1366665262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366665260}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.2650151, z: 0.926196}
+  m_Center: {x: -0, y: 0.58212656, z: -0.03690213}
 --- !u!1001 &1373125764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7900,20 +8270,77 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6517192357249328908, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4863146877832316861, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d520eebdd874c7e409c510276afc25be, type: 3}
       propertyPath: m_Name
       value: Food_Cake_01_Lemon
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2288279927518900511, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492948896647516181, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525671863033717624, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092760899766184396, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1376395715}
   m_SourcePrefab: {fileID: 100100000, guid: d520eebdd874c7e409c510276afc25be, type: 3}
 --- !u!4 &1376395713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d520eebdd874c7e409c510276afc25be, type: 3}
   m_PrefabInstance: {fileID: 1376395712}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1376395714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d520eebdd874c7e409c510276afc25be, type: 3}
+  m_PrefabInstance: {fileID: 1376395712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1376395715
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376395714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.69444704, y: 0.82743216, z: 0.60186124}
+  m_Center: {x: 0.035568357, y: -0.08628392, z: 0.059084296}
 --- !u!1001 &1389035223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8036,9 +8463,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7985319707337256877, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5336163330236859553, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
       propertyPath: m_Name
       value: CupCake_Matcha (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536468468247397773, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8366,6 +8809,22 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
       propertyPath: m_Name
       value: CupCake_Vanilla
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964811433237925423, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687902391153191516, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814836853151054411, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8956,7 +9415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1541685033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vanilla Donut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9509,7 +9968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1719479392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Matcha Donut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9833,6 +10292,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
       propertyPath: m_Name
       value: Prop_CakeStand_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395827364301121846, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10214,20 +10681,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7695245990293694288, guid: 9247b24b24a699a44b3366a5dd83243a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -692134031257983658, guid: 9247b24b24a699a44b3366a5dd83243a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9247b24b24a699a44b3366a5dd83243a, type: 3}
       propertyPath: m_Name
       value: Cup_Matcha
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9247b24b24a699a44b3366a5dd83243a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9247b24b24a699a44b3366a5dd83243a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1810167227}
   m_SourcePrefab: {fileID: 100100000, guid: 9247b24b24a699a44b3366a5dd83243a, type: 3}
 --- !u!4 &1810167225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9247b24b24a699a44b3366a5dd83243a, type: 3}
   m_PrefabInstance: {fileID: 1810167224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1810167226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9247b24b24a699a44b3366a5dd83243a, type: 3}
+  m_PrefabInstance: {fileID: 1810167224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1810167227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810167226}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.51871866, y: 0.78922033, z: 0.58544755}
+  m_Center: {x: 0.0018875301, y: 0.37961215, z: 0.015613437}
 --- !u!1001 &1822065930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10415,6 +10923,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb835180aa9311343ab5f2fa34e02e59, type: 3}
       propertyPath: m_Name
       value: Donut_Vanilla
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb835180aa9311343ab5f2fa34e02e59, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442102377362857687, guid: bb835180aa9311343ab5f2fa34e02e59, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10725,6 +11241,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
       propertyPath: m_Name
       value: Prop_CakeStand_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395827364301121846, guid: 7cafdecb29b35f340a1fdb500e02efd9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11604,6 +12128,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: CupCake_Vanilla (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964811433237925423, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687902391153191516, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814836853151054411, guid: 6878314eddde55d49b4a63d9686911ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11677,6 +12217,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7ff7b002c77eebb46b99a4babe5b4d35, type: 3}
       propertyPath: m_Name
       value: Donut_Matcha
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ff7b002c77eebb46b99a4babe5b4d35, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019389622004320609, guid: 7ff7b002c77eebb46b99a4babe5b4d35, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11752,16 +12300,57 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cup_Strawberry
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c02ad5427bc0519488a3118a9783a005, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780879099058846291, guid: c02ad5427bc0519488a3118a9783a005, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964308164211580403, guid: c02ad5427bc0519488a3118a9783a005, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c02ad5427bc0519488a3118a9783a005, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2085005665}
   m_SourcePrefab: {fileID: 100100000, guid: c02ad5427bc0519488a3118a9783a005, type: 3}
 --- !u!4 &2085005663 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c02ad5427bc0519488a3118a9783a005, type: 3}
   m_PrefabInstance: {fileID: 2085005662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2085005664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c02ad5427bc0519488a3118a9783a005, type: 3}
+  m_PrefabInstance: {fileID: 2085005662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2085005665
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085005664}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.53958446, y: 0.74369586, z: 0.6245289}
+  m_Center: {x: -0.011548251, y: 0.4023743, z: -0.0039272383}
 --- !u!1001 &2106141822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11822,9 +12411,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7985319707337256877, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5336163330236859553, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
       propertyPath: m_Name
       value: CupCake_Matcha
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536468468247397773, guid: 8a490486198856e4cacc332b4fe805ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12047,3 +12652,4 @@ SceneRoots:
   - {fileID: 822187176}
   - {fileID: 897445020}
   - {fileID: 473662258}
+  - {fileID: 985437800}
