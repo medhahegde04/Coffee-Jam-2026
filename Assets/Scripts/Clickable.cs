@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public enum ClickableKind { Cup, EspressoMachine, Dessert }
 
@@ -11,14 +10,15 @@ public class Clickable : MonoBehaviour
 
     public void OnClicked()
     {
+        Debug.Log($"Clicked: {gameObject.name}, Kind={kind}");
         switch (kind)
         {
             case ClickableKind.Cup:
-                OrderManager.Instance.GrabCup();
+                OrderManager.Instance.GrabCup(drinkMade);
                 break;
 
             case ClickableKind.EspressoMachine:
-                OrderManager.Instance.MakeDrink(drinkMade);
+                OrderManager.Instance.MakeDrink();
                 break;
 
             case ClickableKind.Dessert:

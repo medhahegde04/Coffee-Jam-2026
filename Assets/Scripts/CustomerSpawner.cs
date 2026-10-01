@@ -7,7 +7,7 @@ public class CustomerSpawner : MonoBehaviour
 
     public CustomerData[] allCustomers;
     public float delayBetweenCustomers = 2f;
-    public UnityEvent<float, float> onPatienceTick; // (remaining, total) hook a UI bar here
+    public UnityEvent<float, float> onPatienceTick;
 
     float timer;
     float customerStartTime;
@@ -19,10 +19,17 @@ public class CustomerSpawner : MonoBehaviour
 
     void Update()
     {
-        if (!active || OrderManager.Instance.currentCustomer == null) return;
+        if (!active ||
+            OrderManager.Instance == null ||
+            OrderManager.Instance.currentCustomer == null)
+            return;
 
         timer -= Time.deltaTime;
-        onPatienceTick?.Invoke(Mathf.Max(0, timer), OrderManager.Instance.currentCustomer.patienceSeconds);
+
+        onPatienceTick?.Invoke(
+            Mathf.Max(0, timer),
+            OrderManager.Instance.currentCustomer.patienceSeconds
+        );
 
         if (timer <= 0f)
         {
@@ -31,7 +38,10 @@ public class CustomerSpawner : MonoBehaviour
         }
     }
 
-    public float ElapsedOnCurrent() => Time.time - customerStartTime;
+    public float ElapsedOnCurrent()
+    {
+        return Time.time - customerStartTime;
+    }
 
     public void NextCustomer()
     {
@@ -41,9 +51,14 @@ public class CustomerSpawner : MonoBehaviour
 
     void SpawnRandom()
     {
-        if (allCustomers.Length == 0) return;
-        var pick = allCustomers[Random.Range(0, allCustomers.Length)];
+        if (allCustomers.Length == 0)
+            return;
+
+        CustomerData pick =
+            allCustomers[Random.Range(0, allCustomers.Length)];
+
         OrderManager.Instance.SetCustomer(pick);
+
         timer = pick.patienceSeconds;
         customerStartTime = Time.time;
         active = true;
