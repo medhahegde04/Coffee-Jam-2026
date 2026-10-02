@@ -17,3 +17,12 @@ A cozy 3D cafe game made for [Coffee Jam 2026](https://itch.io/jam/coffee-jam-20
 - **Cafe Assets:** [Cute Low Poly Café Assets](https://cloudycreates.itch.io/cute-low-poly-caf-assets) and [Cafe Essentials Vol.2](https://cloudycreates.itch.io/cafe-essentials-vol2) by [Cloudy Creates](https://cloudycreates.itch.io/)
 - **Environment and Characters:** [KayKit – Dungeon Pack](https://kaylousberg.itch.io/kaykit-dungeon-pack), [KayKit – Character Pack: Adventurers](https://kaylousberg.itch.io/kaykit-adventurers), and [KayKit – Character Pack: Skeletons](https://kaylousberg.itch.io/kaykit-skeletons) by [Kay Lousberg](https://kaylousberg.itch.io/)
 - **BGM:** [Cozy Tunes](https://pizzadoggy.itch.io/cozy-tunes) by [Pizza Doggy](https://pizzadoggy.itch.io/)
+
+
+## Future Updates 
+
+- [ ] More unique customer types.
+- [ ] Complex order combinations.
+- [ ] Fun gameplay quirks and challenges.
+- [ ] Character animations.
+- [ ] A better UI and SFX.
