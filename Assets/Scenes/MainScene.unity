@@ -5860,6 +5860,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9c94966e859bcd741b1dd4006774d066, type: 2}
   - {fileID: 11400000, guid: 62dac3835a9509a4eb70d581bd693f8a, type: 2}
   - {fileID: 11400000, guid: b8d2a7da8f0661d438fba095e88bc26d, type: 2}
+  - {fileID: 11400000, guid: adce8a954657d454aaeb7cccc194a4fa, type: 2}
   delayBetweenCustomers: 3
   onPatienceTick:
     m_PersistentCalls:

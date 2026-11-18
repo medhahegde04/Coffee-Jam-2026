@@ -10,6 +10,8 @@ public class Clickable : MonoBehaviour
 
     public void OnClicked()
     {
+        AudioManager.Instance?.PlayClick();
+
         Debug.Log($"Clicked: {gameObject.name}, Kind={kind}");
         switch (kind)
         {

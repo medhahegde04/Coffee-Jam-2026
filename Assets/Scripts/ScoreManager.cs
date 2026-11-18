@@ -19,6 +19,7 @@ public class ScoreManager : MonoBehaviour
         onFeedback?.Invoke($"+{gain}");
         onScoreChanged?.Invoke(score);
         Debug.Log($"Correct order! Score: {score}");
+        AudioManager.Instance?.PlayCorrect();
     }
 
     public void WrongItem()
@@ -27,6 +28,7 @@ public class ScoreManager : MonoBehaviour
         onFeedback?.Invoke("-5 Wrong item");
         onScoreChanged?.Invoke(score);
         Debug.Log($"Wrong item. Score: {score}");
+        AudioManager.Instance?.PlayWrong();
     }
 
     public void MissedOrder()
